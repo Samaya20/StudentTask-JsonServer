@@ -1,18 +1,18 @@
 {
-    "students": [
-      {
-        "id": "",
-        "name": "Step",
-        "surname": "IT",
-        "age": 25,
-        "score": 10
-      },
-      {
-        "id": "",
-        "name": "Testname",
-        "surname": "Testsurname",
-        "age": 18,
-        "score": 12
-      }
-    ]
-  }
+  "students": [
+    {
+      "id": "3f03",
+      "name": "Test2Name",
+      "surname": "Testsurname",
+      "age": "25",
+      "score": "10"
+    },
+    {
+      "id": "c564",
+      "name": "Test",
+      "surname": "Testtt",
+      "age": "28",
+      "score": "10"
+    }
+  ]
+}

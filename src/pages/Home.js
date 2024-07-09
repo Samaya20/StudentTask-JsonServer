@@ -16,8 +16,23 @@ export default function Home() {
     fetchStudents();
   }, []);
   return (
-    <div>
-      <h1>Student App</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "70%",
+        margin: "auto",
+      }}
+    >
+      <h1
+        style={{
+          alignSelf: "start",
+          fontSize: "40px",
+        }}
+      >
+        Student App
+      </h1>
       <StudentForm
         currentStudent={currentStudent}
         setCurrentStudent={setCurrentStudent}
@@ -26,6 +41,7 @@ export default function Home() {
 
       <StudentList
         students={students}
+        currentStudent={currentStudent}
         setCurrentStudent={setCurrentStudent}
         fetchStudents={fetchStudents}
       ></StudentList>

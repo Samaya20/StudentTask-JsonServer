@@ -44,38 +44,68 @@ export default function StudentForm({
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder="Name"
-          required
-        />
-        <input
-          name="surname"
-          value={formData.surname}
-          onChange={handleChange}
-          placeholder="Surname"
-          required
-        />
-        <input
-          name="age"
-          value={formData.age}
-          onChange={handleChange}
-          placeholder="Age"
-          type="number"
-          required
-        />
-        <input
-          name="score"
-          value={formData.score}
-          onChange={handleChange}
-          placeholder="Score"
-          type="number"
-          required
-        />
-        <button type="submit">{formData.id ? "Update" : "Add"} Student</button>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "20px",
+          }}
+        >
+          <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Name"
+            required
+          />
+          <input
+            name="surname"
+            value={formData.surname}
+            onChange={handleChange}
+            placeholder="Surname"
+            required
+          />
+          <input
+            name="age"
+            value={formData.age}
+            onChange={handleChange}
+            placeholder="Age"
+            type="number"
+            required
+          />
+          <input
+            name="score"
+            value={formData.score}
+            onChange={handleChange}
+            placeholder="Score"
+            type="number"
+            required
+          />
+        </div>
+        <button
+          style={{
+            fontSize: "15px",
+            borderRadius: "10px",
+            border: "none",
+            padding: "8px 30px",
+            fontWeight: "600",
+            fontFamily: "Verdana",
+            background: "#23b623",
+            color: "white",
+          }}
+          type="submit"
+        >
+          {formData.id ? "Update" : "Add"}
+        </button>
       </form>
     </>
   );
